@@ -13,27 +13,11 @@ USE IEEE.STD_LOGIC_ARITH.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 USE LPM.LPM_COMPONENTS.ALL;
 
---Reset: 000 
---Basic Countdown: 001
---Basic Stopwatch: 010
---HEX_Out, LED_Out, INT Countdown1: 011
---HEX_Out, LED_Out,  PAUSE Stopwatch1: 100
---Full Countdown2: 101
---Full Stopwatch2: 110
---_____________: 111
-
 ENTITY TIMER2 IS
     PORT(CLOCK,
         RESETN,
-        IO_WRITE,
-		  Mode0,
-		  Mode1,
-		  Mode2,
-		  Mode3,
-		  Mode4,
-		  Mode5,
-		  Mode6,
-        Mode7 : IN    STD_LOGIC;
+        CS,
+        IO_WRITE : IN    STD_LOGIC;
         IO_DATA  : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
 END TIMER2;
@@ -57,11 +41,11 @@ ARCHITECTURE a OF TIMER2 IS
     );
 
     -- IO data should be driven when SCOMP is requesting data
-    OUT_EN <= (Mode1 AND NOT(IO_WRITE));
+    OUT_EN <= (CS AND NOT(IO_WRITE));
 
-    PROCESS (CLOCK, RESETN, Mode1, IO_WRITE)
+    PROCESS (CLOCK, RESETN, CS, IO_WRITE)
     BEGIN
-        IF (RESETN = '0' OR (Mode1 AND IO_WRITE) = '1') THEN
+        IF (RESETN = '0' OR (CS AND IO_WRITE) = '1') THEN
             COUNT <= x"0000";
         ELSIF (rising_edge(CLOCK)) THEN
             COUNT <= COUNT + 1;
@@ -72,9 +56,9 @@ ARCHITECTURE a OF TIMER2 IS
     -- Note that this is only safe because the clock used for this peripheral
     -- is derived from the same clock used for SCOMP; they're not separate
     -- clock domains.
-    PROCESS (Mode1, COUNT, IO_COUNT)
+    PROCESS (CS, COUNT, IO_COUNT)
     BEGIN
-        IF Mode1 = '1' THEN
+        IF CS = '1' THEN
             IO_COUNT <= IO_COUNT;
         ELSE
             IO_COUNT <= COUNT;

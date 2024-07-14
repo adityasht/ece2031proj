@@ -1,5 +1,5 @@
 Flow report for SCOMP
-Sun Jul 14 13:54:11 2024
+Sun Jul 14 18:33:41 2024
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Jul 14 13:54:11 2024       ;
+; Flow Status                     ; Successful - Sun Jul 14 18:33:41 2024       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; SCOMP                                       ;
 ; Top-level Entity Name           ; SCOMP_System                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 488 / 41,910 ( 1 % )                        ;
-; Total registers                 ; 733                                         ;
-; Total pins                      ; 68 / 499 ( 14 % )                           ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 714                                         ;
+; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 45,056 / 5,662,720 ( < 1 % )                ;
-; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
-; Total PLLs                      ; 1 / 15 ( 7 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total block memory bits         ; 45,056                                      ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1                                           ;
+; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/14/2024 13:53:16 ;
+; Start date & time ; 07/14/2024 18:33:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SCOMP               ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ https://fpgasoftware.intel.com/eula.
 ; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name  ; Section Id                        ;
 +-------------------------------------+--------------------------------------------------------+---------------+--------------+-----------------------------------+
 ; ADVANCED_PHYSICAL_OPTIMIZATION      ; Off                                                    ; On            ; --           ; --                                ;
-; COMPILER_SIGNATURE_ID               ; 2545102867769.172097959622980                          ; --            ; --           ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 2545102867769.172099640712044                          ; --            ; --           ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --           ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --           ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --           ; eda_board_design_signal_integrity ;
@@ -146,12 +146,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4959 MB             ; 00:00:10                           ;
-; Fitter               ; 00:00:24     ; 1.2                     ; 7409 MB             ; 00:00:28                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4856 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.7                     ; 5376 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4847 MB             ; 00:00:01                           ;
-; Total                ; 00:00:51     ; --                      ; --                  ; 00:00:48                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4952 MB             ; 00:00:08                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -161,10 +157,6 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; Adityas-PC       ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Adityas-PC       ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Adityas-PC       ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Adityas-PC       ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Adityas-PC       ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -172,10 +164,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
-quartus_fit --read_settings_files=off --write_settings_files=off SCOMP -c SCOMP
-quartus_asm --read_settings_files=off --write_settings_files=off SCOMP -c SCOMP
-quartus_sta SCOMP -c SCOMP
-quartus_eda --read_settings_files=off --write_settings_files=off SCOMP -c SCOMP
 
 
 

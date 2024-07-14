@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP
-Sun Jul 14 13:53:30 2024
+Sun Jul 14 18:33:41 2024
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -35,15 +35,14 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
  27. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_BUSTRI:io_bus
  28. Parameter Settings for User Entity Instance: PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i
  29. Parameter Settings for User Entity Instance: DIG_IN:inst7|LPM_BUSTRI:IO_BUS
- 30. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 31. altsyncram Parameter Settings by Entity Instance
- 32. Signal Tap Logic Analyzer Settings
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0
- 35. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 36. Elapsed Time Per Partition
- 37. Connections to In-System Debugging Instance "auto_signaltap_0"
- 38. Analysis & Synthesis Messages
+ 30. Parameter Settings for User Entity Instance: TIMER2:inst6|LPM_BUSTRI:IO_BUS
+ 31. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 32. altsyncram Parameter Settings by Entity Instance
+ 33. Signal Tap Logic Analyzer Settings
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -70,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jul 14 13:53:30 2024       ;
+; Analysis & Synthesis Status     ; Successful - Sun Jul 14 18:33:41 2024       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; SCOMP                                       ;
 ; Top-level Entity Name           ; SCOMP_System                                ;
@@ -196,85 +195,86 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                         ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                               ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; HEX_DISP.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd                                                       ;             ;
-; DIG_OUT.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/DIG_OUT.vhd                                                        ;             ;
-; DIG_IN.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/DIG_IN.vhd                                                         ;             ;
-; clk_div.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/clk_div.vhd                                                        ;             ;
-; IO_DECODER.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/IO_DECODER.vhd                                                     ;             ;
-; SCOMP.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd                                                          ;             ;
-; SCOMP_System.bdf                                                   ; yes             ; User Block Diagram/Schematic File            ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP_System.bdf                                                   ;             ;
-; HEX_DISP_6.bdf                                                     ; yes             ; User Block Diagram/Schematic File            ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP_6.bdf                                                     ;             ;
-; PLL_main.vhd                                                       ; yes             ; User Wizard-Generated File                   ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main.vhd                                                       ; PLL_main    ;
-; PLL_main/PLL_main_0002.v                                           ; yes             ; User Verilog HDL File                        ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v                                           ; PLL_main    ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                      ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                               ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                         ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                      ;             ;
-; aglobal191.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc                                                                      ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                       ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altrom.inc                                                                          ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altram.inc                                                                          ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altdpram.inc                                                                        ;             ;
-; db/altsyncram_3134.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/altsyncram_3134.tdf                                             ;             ;
-; lpm_clshift.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_clshift.tdf                                                                     ;             ;
-; db/lpm_clshift_fuc.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/lpm_clshift_fuc.tdf                                             ;             ;
-; lpm_bustri.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_bustri.tdf                                                                      ;             ;
-; altera_pll.v                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v                                                                        ;             ;
-; altera_pll_dps_lcell_comb.v                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll_dps_lcell_comb.v                                                         ;             ;
-; altera_cyclonev_pll.v                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_cyclonev_pll.v                                                               ;             ;
-; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                                                   ;             ;
-; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                                              ;             ;
-; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                                                 ;             ;
-; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                                                    ;             ;
-; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_constant.inc                                                                    ;             ;
-; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/dffeea.inc                                                                          ;             ;
-; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                                                       ;             ;
-; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                                                        ;             ;
-; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                                                              ;             ;
-; db/altsyncram_ke84.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/altsyncram_ke84.tdf                                             ;             ;
-; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altdpram.tdf                                                                        ;             ;
-; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/others/maxplus2/memmodes.inc                                                                      ;             ;
-; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_hdffe.inc                                                                         ;             ;
-; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                                                 ;             ;
-; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.inc                                                                      ;             ;
-; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                         ;             ;
-; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/muxlut.inc                                                                          ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/bypassff.inc                                                                        ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altshift.inc                                                                        ;             ;
-; db/mux_flc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/mux_flc.tdf                                                     ;             ;
-; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                                      ;             ;
-; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/declut.inc                                                                          ;             ;
-; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_compare.inc                                                                     ;             ;
-; db/decode_vnf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/decode_vnf.tdf                                                  ;             ;
-; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_counter.tdf                                                                     ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                     ;             ;
-; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/cmpconst.inc                                                                        ;             ;
-; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_counter.inc                                                                     ;             ;
-; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                             ;             ;
-; db/cntr_b7i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_b7i.tdf                                                    ;             ;
-; db/cmpr_a9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cmpr_a9c.tdf                                                    ;             ;
-; db/cntr_82j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_82j.tdf                                                    ;             ;
-; db/cntr_29i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_29i.tdf                                                    ;             ;
-; db/cmpr_d9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cmpr_d9c.tdf                                                    ;             ;
-; db/cntr_kri.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_kri.tdf                                                    ;             ;
-; db/cmpr_99c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cmpr_99c.tdf                                                    ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                      ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                       ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                   ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                         ; altera_sld  ;
-; db/ip/sldfd7bd03d/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                    ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                        ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                              ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; HEX_DISP.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd                                                       ;             ;
+; DIG_OUT.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/DIG_OUT.vhd                                                        ;             ;
+; DIG_IN.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/DIG_IN.vhd                                                         ;             ;
+; clk_div.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/clk_div.vhd                                                        ;             ;
+; IO_DECODER.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/IO_DECODER.vhd                                                     ;             ;
+; SCOMP.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd                                                          ;             ;
+; SCOMP_System.bdf                                                   ; yes             ; User Block Diagram/Schematic File            ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP_System.bdf                                                   ;             ;
+; HEX_DISP_6.bdf                                                     ; yes             ; User Block Diagram/Schematic File            ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP_6.bdf                                                     ;             ;
+; PLL_main.vhd                                                       ; yes             ; User Wizard-Generated File                   ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main.vhd                                                       ; PLL_main    ;
+; PLL_main/PLL_main_0002.v                                           ; yes             ; User Verilog HDL File                        ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v                                           ; PLL_main    ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                     ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                              ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                        ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                     ;             ;
+; aglobal191.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc                                                                     ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                      ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altrom.inc                                                                         ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altram.inc                                                                         ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altdpram.inc                                                                       ;             ;
+; db/altsyncram_3134.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/altsyncram_3134.tdf                                             ;             ;
+; lpm_clshift.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_clshift.tdf                                                                    ;             ;
+; db/lpm_clshift_fuc.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_clshift_fuc.tdf                                             ;             ;
+; lpm_bustri.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_bustri.tdf                                                                     ;             ;
+; altera_pll.v                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v                                                                       ;             ;
+; altera_pll_dps_lcell_comb.v                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll_dps_lcell_comb.v                                                        ;             ;
+; altera_cyclonev_pll.v                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_cyclonev_pll.v                                                              ;             ;
+; timer2.vhd                                                         ; yes             ; Auto-Found VHDL File                         ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd                                                         ;             ;
+; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                                                  ;             ;
+; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                                             ;             ;
+; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                                                ;             ;
+; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                                                   ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_constant.inc                                                                   ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/dffeea.inc                                                                         ;             ;
+; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                                                      ;             ;
+; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                                                       ;             ;
+; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                                                             ;             ;
+; db/altsyncram_ke84.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/altsyncram_ke84.tdf                                             ;             ;
+; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altdpram.tdf                                                                       ;             ;
+; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/others/maxplus2/memmodes.inc                                                                     ;             ;
+; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_hdffe.inc                                                                        ;             ;
+; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                                                ;             ;
+; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.inc                                                                     ;             ;
+; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                        ;             ;
+; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/muxlut.inc                                                                         ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/bypassff.inc                                                                       ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altshift.inc                                                                       ;             ;
+; db/mux_flc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/mux_flc.tdf                                                     ;             ;
+; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                                     ;             ;
+; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/declut.inc                                                                         ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_compare.inc                                                                    ;             ;
+; db/decode_vnf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/decode_vnf.tdf                                                  ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_counter.tdf                                                                    ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                    ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/cmpconst.inc                                                                       ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_counter.inc                                                                    ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                            ;             ;
+; db/cntr_b7i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_b7i.tdf                                                    ;             ;
+; db/cmpr_a9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cmpr_a9c.tdf                                                    ;             ;
+; db/cntr_82j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_82j.tdf                                                    ;             ;
+; db/cntr_29i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_29i.tdf                                                    ;             ;
+; db/cmpr_d9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cmpr_d9c.tdf                                                    ;             ;
+; db/cntr_kri.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_kri.tdf                                                    ;             ;
+; db/cmpr_99c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cmpr_99c.tdf                                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                     ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                      ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                  ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                        ; altera_sld  ;
+; db/ip/sldfd7bd03d/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                   ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------+
@@ -282,14 +282,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 512                      ;
+; Estimate of Logic utilization (ALMs needed) ; 514                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 656                      ;
+; Combinational ALUT usage for logic          ; 653                      ;
 ;     -- 7 input functions                    ; 4                        ;
-;     -- 6 input functions                    ; 124                      ;
-;     -- 5 input functions                    ; 207                      ;
-;     -- 4 input functions                    ; 92                       ;
-;     -- <=3 input functions                  ; 229                      ;
+;     -- 6 input functions                    ; 135                      ;
+;     -- 5 input functions                    ; 196                      ;
+;     -- 4 input functions                    ; 98                       ;
+;     -- <=3 input functions                  ; 220                      ;
 ;                                             ;                          ;
 ; Dedicated logic registers                   ; 714                      ;
 ;                                             ;                          ;
@@ -304,8 +304,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 341                      ;
-; Total fan-out                               ; 5862                     ;
-; Average fan-out                             ; 3.81                     ;
+; Total fan-out                               ; 5873                     ;
+; Average fan-out                             ; 3.83                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -314,8 +314,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                      ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |SCOMP_System                                                                                                                           ; 656 (17)            ; 714 (0)                   ; 45056             ; 0          ; 68   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
-;    |DIG_IN:inst7|                                                                                                                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                                                                                                                                                                                                                                               ; DIG_IN                            ; work         ;
+; |SCOMP_System                                                                                                                           ; 653 (17)            ; 714 (0)                   ; 45056             ; 0          ; 68   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
+;    |DIG_IN:inst7|                                                                                                                       ; 1 (1)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                                                                                                                                                                                                                                               ; DIG_IN                            ; work         ;
 ;    |DIG_OUT:inst21|                                                                                                                     ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_OUT:inst21                                                                                                                                                                                                                                                                                                                             ; DIG_OUT                           ; work         ;
 ;    |HEX_DISP_6:inst9|                                                                                                                   ; 44 (2)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                                                                                                                                                                                                                                           ; HEX_DISP_6                        ; work         ;
 ;       |HEX_DISP:inst1|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst1                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
@@ -330,11 +330,11 @@ https://fpgasoftware.intel.com/eula.
 ;          |altera_pll:altera_pll_i|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                         ; altera_pll                        ; work         ;
 ;             |altera_cyclonev_pll:cyclonev_pll|                                                                                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll                                                                                                                                                                                                                                        ; altera_cyclonev_pll               ; work         ;
 ;                |altera_cyclonev_pll_base:fpll_0|                                                                                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0                                                                                                                                                                                                        ; altera_cyclonev_pll_base          ; work         ;
-;    |SCOMP:inst|                                                                                                                         ; 261 (222)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
+;    |SCOMP:inst|                                                                                                                         ; 257 (217)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
 ;       |altsyncram:altsyncram_component|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                                 ; altsyncram                        ; work         ;
 ;          |altsyncram_3134:auto_generated|                                                                                               ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3134:auto_generated                                                                                                                                                                                                                                                                  ; altsyncram_3134                   ; work         ;
-;       |lpm_clshift:shifter|                                                                                                             ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                                                                                                                                                                                                                                             ; lpm_clshift                       ; work         ;
-;          |lpm_clshift_fuc:auto_generated|                                                                                               ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter|lpm_clshift_fuc:auto_generated                                                                                                                                                                                                                                                                              ; lpm_clshift_fuc                   ; work         ;
+;       |lpm_clshift:shifter|                                                                                                             ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                                                                                                                                                                                                                                             ; lpm_clshift                       ; work         ;
+;          |lpm_clshift_fuc:auto_generated|                                                                                               ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter|lpm_clshift_fuc:auto_generated                                                                                                                                                                                                                                                                              ; lpm_clshift_fuc                   ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 92 (1)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 91 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 91 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -459,91 +459,78 @@ Encoding Type:  One-Hot
 +------------------+---------------+--------------+--------------+-------------+----------------+--------------+-------------+--------------+---------------+-----------------+---------------+---------------+----------------+---------------+---------------+--------------+---------------+--------------+----------------+------------------+-----------------+----------------+-----------------+----------------+---------------+--------------+--------------+-------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                                                            ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                                           ; Reason for Removal                                                                                                                                                                                  ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; DIG_IN:inst7|B_DI[10..15]                                                                                                                                                               ; Stuck at GND due to stuck port data_in                                                                                                                                                              ;
-; SCOMP:inst|int_req[0]                                                                                                                                                                   ; Stuck at GND due to stuck port clock                                                                                                                                                                ;
-; SCOMP:inst|int_req_sync[0]                                                                                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                                                              ;
-; SCOMP:inst|int_req[1..3]                                                                                                                                                                ; Stuck at GND due to stuck port clock                                                                                                                                                                ;
-; SCOMP:inst|int_req_sync[1..3]                                                                                                                                                           ; Stuck at GND due to stuck port data_in                                                                                                                                                              ;
-; SCOMP:inst|IIE[0..3]                                                                                                                                                                    ; Lost fanout                                                                                                                                                                                         ;
-; SCOMP:inst|int_ack[0..3]                                                                                                                                                                ; Lost fanout                                                                                                                                                                                         ;
-; SCOMP:inst|AC_saved[0..15]                                                                                                                                                              ; Stuck at GND due to stuck port clock_enable                                                                                                                                                         ;
-; SCOMP:inst|PC_saved[0..10]                                                                                                                                                              ; Stuck at GND due to stuck port clock_enable                                                                                                                                                         ;
-; SCOMP:inst|GIE                                                                                                                                                                          ; Lost fanout                                                                                                                                                                                         ;
-; SCOMP:inst|state.ex_nop                                                                                                                                                                 ; Lost fanout                                                                                                                                                                                         ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~2                                                                    ; Lost fanout                                                                                                                                                                                         ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~3                                                                    ; Lost fanout                                                                                                                                                                                         ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~4                                                                    ; Lost fanout                                                                                                                                                                                         ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~5                                                                    ; Lost fanout                                                                                                                                                                                         ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_HIGH                                                      ; Stuck at GND due to stuck port clock                                                                                                                                                                ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1                                                     ; Stuck at GND due to stuck port clock                                                                                                                                                                ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0                                                     ; Lost fanout                                                                                                                                                                                         ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2                                                     ; Stuck at GND due to stuck port clock                                                                                                                                                                ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3                                                     ; Stuck at GND due to stuck port clock                                                                                                                                                                ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4                                                     ; Stuck at GND due to stuck port clock                                                                                                                                                                ;
-; Total Number of Removed Registers = 61                                                                                                                                                  ;                                                                                                                                                                                                     ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|segment_shift_clk_ena                                                       ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_enable_delayed                                                 ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[0]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[0]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[1]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[1]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[2]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[2]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[3]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[3]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[4]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[4]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[5]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[5]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[6]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[6]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[7]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[7]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[8]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[8]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[9]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[9]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[10] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[10] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[11] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[11] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[0]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[0]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[1]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[1]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[2]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[2]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[3]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[3]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[4]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[4]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[5]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[5]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[6]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[6]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[7]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[7]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[8]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[8]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[9]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[9]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[10]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[10]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[11]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[11]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13..15]                        ; Stuck at GND due to stuck port data_in                                                                                                                                                              ;
-; Total Number of Removed Registers = 28                                                                                                                                                  ;                                                                                                                                                                                                     ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+; Register name                                                                                                                       ; Reason for Removal                          ;
++-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+; DIG_IN:inst7|B_DI[10..15]                                                                                                           ; Stuck at GND due to stuck port data_in      ;
+; SCOMP:inst|int_req[0]                                                                                                               ; Stuck at GND due to stuck port clock        ;
+; SCOMP:inst|int_req_sync[0]                                                                                                          ; Stuck at GND due to stuck port data_in      ;
+; SCOMP:inst|int_req[1..3]                                                                                                            ; Stuck at GND due to stuck port clock        ;
+; SCOMP:inst|int_req_sync[1..3]                                                                                                       ; Stuck at GND due to stuck port data_in      ;
+; SCOMP:inst|IIE[0..3]                                                                                                                ; Lost fanout                                 ;
+; SCOMP:inst|int_ack[0..3]                                                                                                            ; Lost fanout                                 ;
+; clk_div:inst5|clock_10Hz_int                                                                                                        ; Lost fanout                                 ;
+; clk_div:inst5|count_10Hz[0..19]                                                                                                     ; Lost fanout                                 ;
+; clk_div:inst5|clock_10Hz                                                                                                            ; Lost fanout                                 ;
+; TIMER2:inst6|COUNT[0..15]                                                                                                           ; Lost fanout                                 ;
+; SCOMP:inst|AC_saved[0..15]                                                                                                          ; Stuck at GND due to stuck port clock_enable ;
+; SCOMP:inst|PC_saved[0..10]                                                                                                          ; Stuck at GND due to stuck port clock_enable ;
+; SCOMP:inst|GIE                                                                                                                      ; Lost fanout                                 ;
+; SCOMP:inst|state.ex_nop                                                                                                             ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~2                ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~3                ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~4                ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~5                ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_HIGH  ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1 ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0 ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2 ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3 ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4 ; Stuck at GND due to stuck port clock        ;
+; Total Number of Removed Registers = 99                                                                                              ;                                             ;
++-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                ; Reason for Removal        ; Registers Removed due to This Register                                                                                                                        ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; SCOMP:inst|int_req[0]                                                                                                                                        ; Stuck at GND              ; SCOMP:inst|int_req_sync[0], SCOMP:inst|IIE[0], SCOMP:inst|int_ack[0],                                                                                         ;
-;                                                                                                                                                              ; due to stuck port clock   ; SCOMP:inst|AC_saved[15], SCOMP:inst|AC_saved[14], SCOMP:inst|AC_saved[13],                                                                                    ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|AC_saved[12], SCOMP:inst|AC_saved[11], SCOMP:inst|AC_saved[10],                                                                                    ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|AC_saved[9], SCOMP:inst|AC_saved[8], SCOMP:inst|AC_saved[7],                                                                                       ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|AC_saved[6], SCOMP:inst|AC_saved[5], SCOMP:inst|AC_saved[4],                                                                                       ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|AC_saved[3], SCOMP:inst|AC_saved[2], SCOMP:inst|AC_saved[1],                                                                                       ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|AC_saved[0], SCOMP:inst|PC_saved[10], SCOMP:inst|PC_saved[9],                                                                                      ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|PC_saved[8], SCOMP:inst|PC_saved[7], SCOMP:inst|PC_saved[6],                                                                                       ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|PC_saved[5], SCOMP:inst|PC_saved[4], SCOMP:inst|PC_saved[3],                                                                                       ;
-;                                                                                                                                                              ;                           ; SCOMP:inst|PC_saved[2], SCOMP:inst|PC_saved[1], SCOMP:inst|PC_saved[0]                                                                                        ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1                          ; Stuck at GND              ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0,                          ;
-;                                                                                                                                                              ; due to stuck port clock   ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2,                          ;
-;                                                                                                                                                              ;                           ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3,                          ;
-;                                                                                                                                                              ;                           ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4                           ;
-; SCOMP:inst|int_req[1]                                                                                                                                        ; Stuck at GND              ; SCOMP:inst|int_req_sync[1], SCOMP:inst|IIE[1], SCOMP:inst|int_ack[1]                                                                                          ;
-;                                                                                                                                                              ; due to stuck port clock   ;                                                                                                                                                               ;
-; SCOMP:inst|int_req[2]                                                                                                                                        ; Stuck at GND              ; SCOMP:inst|int_req_sync[2], SCOMP:inst|IIE[2], SCOMP:inst|int_ack[2]                                                                                          ;
-;                                                                                                                                                              ; due to stuck port clock   ;                                                                                                                                                               ;
-; SCOMP:inst|int_req[3]                                                                                                                                        ; Stuck at GND              ; SCOMP:inst|int_req_sync[3], SCOMP:inst|IIE[3], SCOMP:inst|int_ack[3]                                                                                          ;
-;                                                                                                                                                              ; due to stuck port clock   ;                                                                                                                                                               ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[15] ; Stuck at GND              ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[14], ;
-;                                                                                                                                                              ; due to stuck port data_in ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13]  ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                            ;
++-------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                       ; Reason for Removal        ; Registers Removed due to This Register                                                                                               ;
++-------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; SCOMP:inst|int_req[0]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[0], SCOMP:inst|IIE[0], SCOMP:inst|int_ack[0],                                                                ;
+;                                                                                                                                     ; due to stuck port clock   ; SCOMP:inst|AC_saved[15], SCOMP:inst|AC_saved[14], SCOMP:inst|AC_saved[13],                                                           ;
+;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[12], SCOMP:inst|AC_saved[11], SCOMP:inst|AC_saved[10],                                                           ;
+;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[9], SCOMP:inst|AC_saved[8], SCOMP:inst|AC_saved[7],                                                              ;
+;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[6], SCOMP:inst|AC_saved[5], SCOMP:inst|AC_saved[4],                                                              ;
+;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[3], SCOMP:inst|AC_saved[2], SCOMP:inst|AC_saved[1],                                                              ;
+;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[0], SCOMP:inst|PC_saved[10], SCOMP:inst|PC_saved[9],                                                             ;
+;                                                                                                                                     ;                           ; SCOMP:inst|PC_saved[8], SCOMP:inst|PC_saved[7], SCOMP:inst|PC_saved[6],                                                              ;
+;                                                                                                                                     ;                           ; SCOMP:inst|PC_saved[5], SCOMP:inst|PC_saved[4], SCOMP:inst|PC_saved[3],                                                              ;
+;                                                                                                                                     ;                           ; SCOMP:inst|PC_saved[2], SCOMP:inst|PC_saved[1], SCOMP:inst|PC_saved[0]                                                               ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1 ; Stuck at GND              ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0, ;
+;                                                                                                                                     ; due to stuck port clock   ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2, ;
+;                                                                                                                                     ;                           ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3, ;
+;                                                                                                                                     ;                           ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4  ;
+; SCOMP:inst|int_req[1]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[1], SCOMP:inst|IIE[1], SCOMP:inst|int_ack[1]                                                                 ;
+;                                                                                                                                     ; due to stuck port clock   ;                                                                                                                                      ;
+; SCOMP:inst|int_req[2]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[2], SCOMP:inst|IIE[2], SCOMP:inst|int_ack[2]                                                                 ;
+;                                                                                                                                     ; due to stuck port clock   ;                                                                                                                                      ;
+; SCOMP:inst|int_req[3]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[3], SCOMP:inst|IIE[3], SCOMP:inst|int_ack[3]                                                                 ;
+;                                                                                                                                     ; due to stuck port clock   ;                                                                                                                                      ;
+; DIG_IN:inst7|B_DI[10]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[10]                                                                                                               ;
+;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
+; DIG_IN:inst7|B_DI[11]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[11]                                                                                                               ;
+;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
+; DIG_IN:inst7|B_DI[12]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[12]                                                                                                               ;
+;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
+; DIG_IN:inst7|B_DI[13]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[13]                                                                                                               ;
+;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
+; DIG_IN:inst7|B_DI[14]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[14]                                                                                                               ;
+;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
+; DIG_IN:inst7|B_DI[15]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[15]                                                                                                               ;
+;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -585,31 +572,16 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[1][5]                                                                                                                                                                                                                                                                                                                                ;
-; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[1]                                                                                                                                                                                                                                                                                                                                         ;
-; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[12]                                                                                                                                                                                                                                                                                                                                        ;
-; 13:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1                                                                                                                                                                                                                                                                                                                                          ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[4]                                                                                                                                                                                                                     ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[14]                                                                                                                                                                                                                    ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[2]                                                                                                                                                                                              ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_len_reg[25]                                                                                                                                                                                                                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|word_counter[0]                                                                                                                                                                                                        ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|counter[1]                                                                                                                                                                                        ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; Yes        ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|WORD_SR[1]                                                                                                                                                                                                             ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|offset_count                                                                                                                                                                                      ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[1]                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[1]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]              ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 32 LEs               ; 20 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[1][5] ;
+; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[1]          ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[12]         ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1052,6 +1024,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TIMER2:inst6|LPM_BUSTRI:IO_BUS ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; LPM_WIDTH      ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                        ;
 +-------------------------------------------------+-------------------------------------+----------------+
@@ -1159,20 +1141,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR                ; 11                    ;
 ;     ENA SLD                 ; 99                    ;
 ;     plain                   ; 10                    ;
-; arriav_lcell_comb           ; 332                   ;
+; arriav_lcell_comb           ; 329                   ;
 ;     arith                   ; 28                    ;
 ;         1 data inputs       ; 12                    ;
 ;         5 data inputs       ; 16                    ;
 ;     extend                  ; 3                     ;
 ;         7 data inputs       ; 3                     ;
-;     normal                  ; 301                   ;
+;     normal                  ; 298                   ;
 ;         0 data inputs       ; 1                     ;
 ;         1 data inputs       ; 6                     ;
-;         2 data inputs       ; 18                    ;
-;         3 data inputs       ; 36                    ;
-;         4 data inputs       ; 55                    ;
-;         5 data inputs       ; 122                   ;
-;         6 data inputs       ; 63                    ;
+;         2 data inputs       ; 15                    ;
+;         3 data inputs       ; 30                    ;
+;         4 data inputs       ; 61                    ;
+;         5 data inputs       ; 111                   ;
+;         6 data inputs       ; 74                    ;
 ; boundary_port               ; 69                    ;
 ; cyclonev_fractional_pll     ; 1                     ;
 ; cyclonev_pll_output_counter ; 1                     ;
@@ -1181,86 +1163,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block          ; 16                    ;
 ;                             ;                       ;
 ; Max LUT depth               ; 5.50                  ;
-; Average LUT depth           ; 2.40                  ;
+; Average LUT depth           ; 2.52                  ;
 +-----------------------------+-----------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0 ;
-+-----------------------+--------------------------------------------------------+
-; Type                  ; Count                                                  ;
-+-----------------------+--------------------------------------------------------+
-; arriav_ff             ; 401                                                    ;
-;     CLR               ; 8                                                      ;
-;     CLR SLD           ; 49                                                     ;
-;     ENA               ; 79                                                     ;
-;     ENA CLR           ; 54                                                     ;
-;     ENA CLR SCLR      ; 37                                                     ;
-;     ENA SCLR          ; 37                                                     ;
-;     ENA SCLR SLD      ; 33                                                     ;
-;     ENA SLD           ; 38                                                     ;
-;     SCLR SLD          ; 7                                                      ;
-;     plain             ; 59                                                     ;
-; arriav_lcell_comb     ; 238                                                    ;
-;     arith             ; 92                                                     ;
-;         0 data inputs ; 4                                                      ;
-;         1 data inputs ; 87                                                     ;
-;         2 data inputs ; 1                                                      ;
-;     normal            ; 146                                                    ;
-;         0 data inputs ; 2                                                      ;
-;         1 data inputs ; 13                                                     ;
-;         2 data inputs ; 6                                                      ;
-;         3 data inputs ; 10                                                     ;
-;         4 data inputs ; 22                                                     ;
-;         5 data inputs ; 45                                                     ;
-;         6 data inputs ; 48                                                     ;
-; boundary_port         ; 99                                                     ;
-; stratixv_ram_block    ; 3                                                      ;
-;                       ;                                                        ;
-; Max LUT depth         ; 4.10                                                   ;
-; Average LUT depth     ; 1.71                                                   ;
-+-----------------------+--------------------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; arriav_ff             ; 90                                       ;
-;     CLR               ; 5                                        ;
-;     ENA               ; 30                                       ;
-;     ENA CLR           ; 22                                       ;
-;     ENA CLR SLD       ; 10                                       ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; arriav_lcell_comb     ; 92                                       ;
-;     extend            ; 1                                        ;
-;         7 data inputs ; 1                                        ;
-;     normal            ; 91                                       ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 4                                        ;
-;         2 data inputs ; 20                                       ;
-;         3 data inputs ; 14                                       ;
-;         4 data inputs ; 15                                       ;
-;         5 data inputs ; 24                                       ;
-;         6 data inputs ; 13                                       ;
-; boundary_port         ; 107                                      ;
-;                       ;                                          ;
-; Max LUT depth         ; 3.00                                     ;
-; Average LUT depth     ; 1.33                                     ;
-+-----------------------+------------------------------------------+
-
-
-+-----------------------------------------------+
-; Elapsed Time Per Partition                    ;
-+--------------------------------+--------------+
-; Partition Name                 ; Elapsed Time ;
-+--------------------------------+--------------+
-; Top                            ; 00:00:00     ;
-; sld_signaltap:auto_signaltap_0 ; 00:00:00     ;
-; sld_hub:auto_hub               ; 00:00:00     ;
-+--------------------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1316,44 +1229,44 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Jul 14 13:53:15 2024
+    Info: Processing started: Sun Jul 14 18:33:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file hex_disp.vhd
-    Info (12022): Found design unit 1: HEX_DISP-a File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 17
-    Info (12023): Found entity 1: HEX_DISP File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 9
+    Info (12022): Found design unit 1: HEX_DISP-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 17
+    Info (12023): Found entity 1: HEX_DISP File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dig_out.vhd
-    Info (12022): Found design unit 1: DIG_OUT-a File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/DIG_OUT.vhd Line: 27
-    Info (12023): Found entity 1: DIG_OUT File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/DIG_OUT.vhd Line: 16
+    Info (12022): Found design unit 1: DIG_OUT-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/DIG_OUT.vhd Line: 27
+    Info (12023): Found entity 1: DIG_OUT File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/DIG_OUT.vhd Line: 16
 Info (12021): Found 2 design units, including 1 entities, in source file dig_in.vhd
-    Info (12022): Found design unit 1: DIG_IN-a File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/DIG_IN.vhd Line: 19
-    Info (12023): Found entity 1: DIG_IN File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/DIG_IN.vhd Line: 10
+    Info (12022): Found design unit 1: DIG_IN-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/DIG_IN.vhd Line: 19
+    Info (12023): Found entity 1: DIG_IN File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/DIG_IN.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: clk_div-a File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/clk_div.vhd Line: 26
-    Info (12023): Found entity 1: clk_div File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/clk_div.vhd Line: 11
+    Info (12022): Found design unit 1: clk_div-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/clk_div.vhd Line: 26
+    Info (12023): Found entity 1: clk_div File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/clk_div.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file io_decoder.vhd
-    Info (12022): Found design unit 1: IO_DECODER-a File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/IO_DECODER.vhd Line: 32
-    Info (12023): Found entity 1: IO_DECODER File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/IO_DECODER.vhd Line: 9
+    Info (12022): Found design unit 1: IO_DECODER-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/IO_DECODER.vhd Line: 32
+    Info (12023): Found entity 1: IO_DECODER File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/IO_DECODER.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file scomp.vhd
-    Info (12022): Found design unit 1: SCOMP-a File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 34
-    Info (12023): Found entity 1: SCOMP File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 16
+    Info (12022): Found design unit 1: SCOMP-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 34
+    Info (12023): Found entity 1: SCOMP File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file scomp_system.bdf
     Info (12023): Found entity 1: SCOMP_System
 Info (12021): Found 1 design units, including 1 entities, in source file hex_disp_6.bdf
     Info (12023): Found entity 1: HEX_DISP_6
 Info (12021): Found 2 design units, including 1 entities, in source file pll_main.vhd
-    Info (12022): Found design unit 1: PLL_main-rtl File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main.vhd Line: 21
-    Info (12023): Found entity 1: PLL_main File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main.vhd Line: 11
+    Info (12022): Found design unit 1: PLL_main-rtl File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main.vhd Line: 21
+    Info (12023): Found entity 1: PLL_main File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file pll_main/pll_main_0002.v
-    Info (12023): Found entity 1: PLL_main_0002 File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 2
+    Info (12023): Found entity 1: PLL_main_0002 File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 2
 Info (12127): Elaborating entity "SCOMP_System" for the top level hierarchy
 Info (12128): Elaborating entity "HEX_DISP_6" for hierarchy "HEX_DISP_6:inst9"
 Info (12128): Elaborating entity "HEX_DISP" for hierarchy "HEX_DISP_6:inst9|HEX_DISP:inst1"
 Info (12128): Elaborating entity "IO_DECODER" for hierarchy "IO_DECODER:inst3"
 Info (12128): Elaborating entity "SCOMP" for hierarchy "SCOMP:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 70
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|altsyncram:altsyncram_component" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 70
-Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 70
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 70
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|altsyncram:altsyncram_component" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 70
+Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 70
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1405,36 +1318,36 @@ Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_compon
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3134.tdf
-    Info (12023): Found entity 1: altsyncram_3134 File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/altsyncram_3134.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_3134 File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/altsyncram_3134.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_3134" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3134:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Critical Warning (127003): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/NewTimerTest.mif -- setting all initial values to 0 File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 70
-Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 97
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 97
-Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 97
+Critical Warning (127003): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/NewTimerTest.mif -- setting all initial values to 0 File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 70
+Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 97
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 97
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 97
     Info (12134): Parameter "LPM_WIDTH" = "16"
     Info (12134): Parameter "LPM_WIDTHDIST" = "4"
     Info (12134): Parameter "LPM_SHIFTTYPE" = "arithmetic"
     Info (12134): Parameter "LPM_TYPE" = "LPM_CLSHIFT"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_fuc.tdf
-    Info (12023): Found entity 1: lpm_clshift_fuc File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/lpm_clshift_fuc.tdf Line: 23
+    Info (12023): Found entity 1: lpm_clshift_fuc File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_clshift_fuc.tdf Line: 23
 Info (12128): Elaborating entity "lpm_clshift_fuc" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter|lpm_clshift_fuc:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
-Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 124
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 124
-Info (12133): Instantiated megafunction "SCOMP:inst|LPM_BUSTRI:io_bus" with the following parameter: File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/SCOMP.vhd Line: 124
+Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 124
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 124
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_BUSTRI:io_bus" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 124
     Info (12134): Parameter "LPM_WIDTH" = "16"
     Info (12134): Parameter "LPM_TYPE" = "LPM_BUSTRI"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12128): Elaborating entity "PLL_main" for hierarchy "PLL_main:inst1"
-Info (12128): Elaborating entity "PLL_main_0002" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main.vhd Line: 35
-Warning (10034): Output port "outclk_1" at PLL_main_0002.v(14) has no driver File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 14
-Info (12128): Elaborating entity "altera_pll" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 238
+Info (12128): Elaborating entity "PLL_main_0002" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main.vhd Line: 35
+Warning (10034): Output port "outclk_1" at PLL_main_0002.v(14) has no driver File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 14
+Info (12128): Elaborating entity "altera_pll" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 238
 Warning (10034): Output port "lvds_clk" at altera_pll.v(320) has no driver File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 320
 Warning (10034): Output port "loaden" at altera_pll.v(321) has no driver File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 321
 Warning (10034): Output port "extclk_out" at altera_pll.v(322) has no driver File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 322
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 238
-Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 238
+Info (12130): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 238
+Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/PLL_main/PLL_main_0002.v Line: 238
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "pll_fractional_cout" = "32"
@@ -1664,32 +1577,53 @@ Info (12131): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_000
 Info (12128): Elaborating entity "altera_cyclonev_pll_base" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_cyclonev_pll.v Line: 1153
 Info (12131): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0", which is child of megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_cyclonev_pll.v Line: 1153
 Info (12128): Elaborating entity "DIG_IN" for hierarchy "DIG_IN:inst7"
-Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst21"
+Warning (12125): Using design file timer2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: TIMER2-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 41
+    Info (12023): Found entity 1: TIMER2 File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 25
+Info (12128): Elaborating entity "TIMER2" for hierarchy "TIMER2:inst6"
+Warning (10631): VHDL Process Statement warning at timer2.vhd(75): inferring latch(es) for signal or variable "IO_COUNT", which holds its previous value in one or more paths through the process File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[0]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[1]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[2]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[3]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[4]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[5]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[6]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[7]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[8]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[9]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[10]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[11]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[12]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[13]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[14]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Info (10041): Inferred latch for "IO_COUNT[15]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst5"
+Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst21"
 Warning (12030): Port "extclk" on the entity instantiation of "cyclonev_pll" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be left dangling without any fan-out logic. File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 2224
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ke84.tdf
-    Info (12023): Found entity 1: altsyncram_ke84 File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/altsyncram_ke84.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_ke84 File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/altsyncram_ke84.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_flc.tdf
-    Info (12023): Found entity 1: mux_flc File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/mux_flc.tdf Line: 23
+    Info (12023): Found entity 1: mux_flc File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/mux_flc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_vnf.tdf
-    Info (12023): Found entity 1: decode_vnf File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/decode_vnf.tdf Line: 23
+    Info (12023): Found entity 1: decode_vnf File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/decode_vnf.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_b7i.tdf
-    Info (12023): Found entity 1: cntr_b7i File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_b7i.tdf Line: 28
+    Info (12023): Found entity 1: cntr_b7i File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_b7i.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_a9c.tdf
-    Info (12023): Found entity 1: cmpr_a9c File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cmpr_a9c.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_a9c File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cmpr_a9c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_82j.tdf
-    Info (12023): Found entity 1: cntr_82j File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_82j.tdf Line: 26
+    Info (12023): Found entity 1: cntr_82j File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_82j.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_29i.tdf
-    Info (12023): Found entity 1: cntr_29i File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_29i.tdf Line: 28
+    Info (12023): Found entity 1: cntr_29i File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_29i.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_d9c.tdf
-    Info (12023): Found entity 1: cmpr_d9c File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cmpr_d9c.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_d9c File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cmpr_d9c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_kri.tdf
-    Info (12023): Found entity 1: cntr_kri File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cntr_kri.tdf Line: 28
+    Info (12023): Found entity 1: cntr_kri File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cntr_kri.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_99c.tdf
-    Info (12023): Found entity 1: cmpr_99c File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/cmpr_99c.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_99c File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.07.14.13:53:23 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.07.14.18:33:35 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1700,18 +1634,34 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[1]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[2]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[3]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[4]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[5]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[6]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[7]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[8]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[9]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[10]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[11]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[12]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[13]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[14]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[15]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[0]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following LCELL buffer node(s):
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|cntsel_temp[4]" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 425
@@ -1721,43 +1671,41 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|cntsel_temp[0]" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 425
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|gnd" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 427
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "IO_DATA[15]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[14]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[13]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[12]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[11]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[10]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[9]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[8]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[7]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[6]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[5]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[4]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[3]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[2]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[1]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[0]" into a selector File: C:/Users/Aditya Singh/Downloads/SCOMP_Project_sum24/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[15]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[14]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[13]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[12]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[11]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[10]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[9]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[8]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[7]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[6]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[5]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[4]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[3]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[2]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[1]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[0]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "TPs[3]" is stuck at GND
     Warning (13410): Pin "TPs[2]" is stuck at GND
     Warning (13410): Pin "TPs[1]" is stuck at GND
     Warning (13410): Pin "TPs[0]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (17049): 15 registers lost all their fanouts during netlist optimizations.
-Info (286031): Timing-Driven Synthesis is running on partition "sld_signaltap:auto_signaltap_0"
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
+Info (17049): 53 registers lost all their fanouts during netlist optimizations.
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 34 of its 39 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 5 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 17 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1232 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1230 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 1136 logic cells
+    Info (21061): Implemented 1134 logic cells
     Info (21064): Implemented 19 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 4959 megabytes
-    Info: Processing ended: Sun Jul 14 13:53:30 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:10
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
+    Info: Peak virtual memory: 4952 megabytes
+    Info: Processing ended: Sun Jul 14 18:33:41 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:09
 
 
