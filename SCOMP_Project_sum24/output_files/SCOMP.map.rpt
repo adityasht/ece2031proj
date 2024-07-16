@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP
-Sun Jul 14 18:33:41 2024
+Tue Jul 16 15:34:58 2024
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -17,32 +17,44 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   9. Analysis & Synthesis IP Cores Summary
  10. State Machine - |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state
  11. State Machine - |SCOMP_System|SCOMP:inst|state
- 12. Registers Removed During Synthesis
- 13. Removed Registers Triggering Further Register Optimizations
- 14. General Register Statistics
- 15. Inverted Register Statistics
- 16. Multiplexer Restructuring Statistics (Restructuring Performed)
- 17. Source assignments for SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3134:auto_generated
- 18. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i
- 19. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_0
- 20. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_1
- 21. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2
- 22. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3
- 23. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4
- 24. Source assignments for sld_signaltap:auto_signaltap_0
- 25. Parameter Settings for User Entity Instance: SCOMP:inst|altsyncram:altsyncram_component
- 26. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_CLSHIFT:shifter
- 27. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_BUSTRI:io_bus
- 28. Parameter Settings for User Entity Instance: PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i
- 29. Parameter Settings for User Entity Instance: DIG_IN:inst7|LPM_BUSTRI:IO_BUS
- 30. Parameter Settings for User Entity Instance: TIMER2:inst6|LPM_BUSTRI:IO_BUS
- 31. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 32. altsyncram Parameter Settings by Entity Instance
- 33. Signal Tap Logic Analyzer Settings
- 34. Post-Synthesis Netlist Statistics for Top Partition
- 35. Elapsed Time Per Partition
- 36. Connections to In-System Debugging Instance "auto_signaltap_0"
- 37. Analysis & Synthesis Messages
+ 12. User-Specified and Inferred Latches
+ 13. Registers Removed During Synthesis
+ 14. Removed Registers Triggering Further Register Optimizations
+ 15. General Register Statistics
+ 16. Inverted Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3134:auto_generated
+ 19. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i
+ 20. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_0
+ 21. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_1
+ 22. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2
+ 23. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3
+ 24. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4
+ 25. Source assignments for sld_signaltap:auto_signaltap_0
+ 26. Parameter Settings for User Entity Instance: SCOMP:inst|altsyncram:altsyncram_component
+ 27. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_CLSHIFT:shifter
+ 28. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_BUSTRI:io_bus
+ 29. Parameter Settings for User Entity Instance: PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i
+ 30. Parameter Settings for User Entity Instance: DIG_IN:inst7|LPM_BUSTRI:IO_BUS
+ 31. Parameter Settings for User Entity Instance: TIMER2:inst6|LPM_BUSTRI:IO_BUS
+ 32. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 33. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod1
+ 34. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod3
+ 35. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod6
+ 36. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod2
+ 37. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div3
+ 38. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div2
+ 39. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod4
+ 40. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div5
+ 41. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div1
+ 42. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod0
+ 43. Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div4
+ 44. altsyncram Parameter Settings by Entity Instance
+ 45. Signal Tap Logic Analyzer Settings
+ 46. Post-Synthesis Netlist Statistics for Top Partition
+ 47. Elapsed Time Per Partition
+ 48. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 49. Analysis & Synthesis Messages
 
 
 
@@ -69,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jul 14 18:33:41 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jul 16 15:34:58 2024       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; SCOMP                                       ;
 ; Top-level Entity Name           ; SCOMP_System                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 714                                         ;
+; Total registers                 ; 750                                         ;
 ; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 45,056                                      ;
@@ -191,7 +203,14 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -274,6 +293,25 @@ https://fpgasoftware.intel.com/eula.
 ; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
 ; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                   ;             ;
+; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                                     ;             ;
+; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/abs_divider.inc                                                                    ;             ;
+; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                ;             ;
+; db/lpm_divide_a5m.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_a5m.tdf                                              ;             ;
+; db/sign_div_unsign_dnh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_dnh.tdf                                         ;             ;
+; db/alt_u_div_03f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_03f.tdf                                               ;             ;
+; db/lpm_divide_1dm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_1dm.tdf                                              ;             ;
+; db/sign_div_unsign_7nh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_7nh.tdf                                         ;             ;
+; db/alt_u_div_k2f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_k2f.tdf                                               ;             ;
+; db/lpm_divide_4dm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_4dm.tdf                                              ;             ;
+; db/sign_div_unsign_anh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_anh.tdf                                         ;             ;
+; db/alt_u_div_q2f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_q2f.tdf                                               ;             ;
+; db/lpm_divide_kbm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_kbm.tdf                                              ;             ;
+; db/sign_div_unsign_qlh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_qlh.tdf                                         ;             ;
+; db/alt_u_div_qve.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_qve.tdf                                               ;             ;
+; db/lpm_divide_7dm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_7dm.tdf                                              ;             ;
+; db/lpm_divide_nbm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_nbm.tdf                                              ;             ;
+; db/sign_div_unsign_tlh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_tlh.tdf                                         ;             ;
+; db/alt_u_div_00f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_00f.tdf                                               ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
@@ -282,16 +320,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 514                      ;
+; Estimate of Logic utilization (ALMs needed) ; 1383                     ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 653                      ;
-;     -- 7 input functions                    ; 4                        ;
-;     -- 6 input functions                    ; 135                      ;
-;     -- 5 input functions                    ; 196                      ;
-;     -- 4 input functions                    ; 98                       ;
-;     -- <=3 input functions                  ; 220                      ;
+; Combinational ALUT usage for logic          ; 2397                     ;
+;     -- 7 input functions                    ; 6                        ;
+;     -- 6 input functions                    ; 123                      ;
+;     -- 5 input functions                    ; 218                      ;
+;     -- 4 input functions                    ; 615                      ;
+;     -- <=3 input functions                  ; 1435                     ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 714                      ;
+; Dedicated logic registers                   ; 750                      ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 68                       ;
 ; Total MLAB memory bits                      ; 0                        ;
@@ -304,8 +342,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 341                      ;
-; Total fan-out                               ; 5873                     ;
-; Average fan-out                             ; 3.83                     ;
+; Total fan-out                               ; 11424                    ;
+; Average fan-out                             ; 3.45                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -314,8 +352,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                      ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |SCOMP_System                                                                                                                           ; 653 (17)            ; 714 (0)                   ; 45056             ; 0          ; 68   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
-;    |DIG_IN:inst7|                                                                                                                       ; 1 (1)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                                                                                                                                                                                                                                               ; DIG_IN                            ; work         ;
+; |SCOMP_System                                                                                                                           ; 2397 (17)           ; 750 (0)                   ; 45056             ; 0          ; 68   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
+;    |DIG_IN:inst7|                                                                                                                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                                                                                                                                                                                                                                               ; DIG_IN                            ; work         ;
 ;    |DIG_OUT:inst21|                                                                                                                     ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_OUT:inst21                                                                                                                                                                                                                                                                                                                             ; DIG_OUT                           ; work         ;
 ;    |HEX_DISP_6:inst9|                                                                                                                   ; 44 (2)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                                                                                                                                                                                                                                           ; HEX_DISP_6                        ; work         ;
 ;       |HEX_DISP:inst1|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst1                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
@@ -324,17 +362,59 @@ https://fpgasoftware.intel.com/eula.
 ;       |HEX_DISP:inst4|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst4                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst5|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst5                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst6|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst6                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
-;    |IO_DECODER:inst3|                                                                                                                   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|IO_DECODER:inst3                                                                                                                                                                                                                                                                                                                           ; IO_DECODER                        ; work         ;
+;    |IO_DECODER:inst3|                                                                                                                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|IO_DECODER:inst3                                                                                                                                                                                                                                                                                                                           ; IO_DECODER                        ; work         ;
 ;    |PLL_main:inst1|                                                                                                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1                                                                                                                                                                                                                                                                                                                             ; PLL_main                          ; pll_main     ;
 ;       |PLL_main_0002:pll_main_inst|                                                                                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst                                                                                                                                                                                                                                                                                                 ; PLL_main_0002                     ; PLL_main     ;
 ;          |altera_pll:altera_pll_i|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                         ; altera_pll                        ; work         ;
 ;             |altera_cyclonev_pll:cyclonev_pll|                                                                                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll                                                                                                                                                                                                                                        ; altera_cyclonev_pll               ; work         ;
 ;                |altera_cyclonev_pll_base:fpll_0|                                                                                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0                                                                                                                                                                                                        ; altera_cyclonev_pll_base          ; work         ;
-;    |SCOMP:inst|                                                                                                                         ; 257 (217)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
+;    |SCOMP:inst|                                                                                                                         ; 243 (200)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
 ;       |altsyncram:altsyncram_component|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                                 ; altsyncram                        ; work         ;
 ;          |altsyncram_3134:auto_generated|                                                                                               ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3134:auto_generated                                                                                                                                                                                                                                                                  ; altsyncram_3134                   ; work         ;
-;       |lpm_clshift:shifter|                                                                                                             ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                                                                                                                                                                                                                                             ; lpm_clshift                       ; work         ;
-;          |lpm_clshift_fuc:auto_generated|                                                                                               ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter|lpm_clshift_fuc:auto_generated                                                                                                                                                                                                                                                                              ; lpm_clshift_fuc                   ; work         ;
+;       |lpm_clshift:shifter|                                                                                                             ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                                                                                                                                                                                                                                             ; lpm_clshift                       ; work         ;
+;          |lpm_clshift_fuc:auto_generated|                                                                                               ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter|lpm_clshift_fuc:auto_generated                                                                                                                                                                                                                                                                              ; lpm_clshift_fuc                   ; work         ;
+;    |TIMER2:inst6|                                                                                                                       ; 1732 (55)           ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6                                                                                                                                                                                                                                                                                                                               ; TIMER2                            ; work         ;
+;       |lpm_divide:Div1|                                                                                                                 ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div1                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_7dm:auto_generated|                                                                                                ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div1|lpm_divide_7dm:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_7dm                    ; work         ;
+;             |sign_div_unsign_dnh:divider|                                                                                               ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div1|lpm_divide_7dm:auto_generated|sign_div_unsign_dnh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_dnh               ; work         ;
+;                |alt_u_div_03f:divider|                                                                                                  ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div1|lpm_divide_7dm:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider                                                                                                                                                                                                                               ; alt_u_div_03f                     ; work         ;
+;       |lpm_divide:Div2|                                                                                                                 ; 104 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div2                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_4dm:auto_generated|                                                                                                ; 104 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div2|lpm_divide_4dm:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_4dm                    ; work         ;
+;             |sign_div_unsign_anh:divider|                                                                                               ; 104 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div2|lpm_divide_4dm:auto_generated|sign_div_unsign_anh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_anh               ; work         ;
+;                |alt_u_div_q2f:divider|                                                                                                  ; 104 (104)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div2|lpm_divide_4dm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_q2f:divider                                                                                                                                                                                                                               ; alt_u_div_q2f                     ; work         ;
+;       |lpm_divide:Div3|                                                                                                                 ; 159 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div3                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_1dm:auto_generated|                                                                                                ; 159 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div3|lpm_divide_1dm:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_1dm                    ; work         ;
+;             |sign_div_unsign_7nh:divider|                                                                                               ; 159 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div3|lpm_divide_1dm:auto_generated|sign_div_unsign_7nh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_7nh               ; work         ;
+;                |alt_u_div_k2f:divider|                                                                                                  ; 159 (159)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div3|lpm_divide_1dm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_k2f:divider                                                                                                                                                                                                                               ; alt_u_div_k2f                     ; work         ;
+;       |lpm_divide:Div4|                                                                                                                 ; 173 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div4                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_nbm:auto_generated|                                                                                                ; 173 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div4|lpm_divide_nbm:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_nbm                    ; work         ;
+;             |sign_div_unsign_tlh:divider|                                                                                               ; 173 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div4|lpm_divide_nbm:auto_generated|sign_div_unsign_tlh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_tlh               ; work         ;
+;                |alt_u_div_00f:divider|                                                                                                  ; 173 (173)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div4|lpm_divide_nbm:auto_generated|sign_div_unsign_tlh:divider|alt_u_div_00f:divider                                                                                                                                                                                                                               ; alt_u_div_00f                     ; work         ;
+;       |lpm_divide:Div5|                                                                                                                 ; 135 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div5                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_kbm:auto_generated|                                                                                                ; 135 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div5|lpm_divide_kbm:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_kbm                    ; work         ;
+;             |sign_div_unsign_qlh:divider|                                                                                               ; 135 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div5|lpm_divide_kbm:auto_generated|sign_div_unsign_qlh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_qlh               ; work         ;
+;                |alt_u_div_qve:divider|                                                                                                  ; 135 (135)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Div5|lpm_divide_kbm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_qve:divider                                                                                                                                                                                                                               ; alt_u_div_qve                     ; work         ;
+;       |lpm_divide:Mod1|                                                                                                                 ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod1                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_a5m:auto_generated|                                                                                                ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod1|lpm_divide_a5m:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_a5m                    ; work         ;
+;             |sign_div_unsign_dnh:divider|                                                                                               ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod1|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_dnh               ; work         ;
+;                |alt_u_div_03f:divider|                                                                                                  ; 49 (49)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod1|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider                                                                                                                                                                                                                               ; alt_u_div_03f                     ; work         ;
+;       |lpm_divide:Mod2|                                                                                                                 ; 157 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod2                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_a5m:auto_generated|                                                                                                ; 157 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod2|lpm_divide_a5m:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_a5m                    ; work         ;
+;             |sign_div_unsign_dnh:divider|                                                                                               ; 157 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod2|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_dnh               ; work         ;
+;                |alt_u_div_03f:divider|                                                                                                  ; 157 (157)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod2|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider                                                                                                                                                                                                                               ; alt_u_div_03f                     ; work         ;
+;       |lpm_divide:Mod3|                                                                                                                 ; 264 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod3                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_a5m:auto_generated|                                                                                                ; 264 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod3|lpm_divide_a5m:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_a5m                    ; work         ;
+;             |sign_div_unsign_dnh:divider|                                                                                               ; 264 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod3|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_dnh               ; work         ;
+;                |alt_u_div_03f:divider|                                                                                                  ; 264 (264)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod3|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider                                                                                                                                                                                                                               ; alt_u_div_03f                     ; work         ;
+;       |lpm_divide:Mod4|                                                                                                                 ; 316 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod4                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_a5m:auto_generated|                                                                                                ; 316 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod4|lpm_divide_a5m:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_a5m                    ; work         ;
+;             |sign_div_unsign_dnh:divider|                                                                                               ; 316 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod4|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_dnh               ; work         ;
+;                |alt_u_div_03f:divider|                                                                                                  ; 316 (316)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod4|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider                                                                                                                                                                                                                               ; alt_u_div_03f                     ; work         ;
+;       |lpm_divide:Mod6|                                                                                                                 ; 303 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod6                                                                                                                                                                                                                                                                                                               ; lpm_divide                        ; work         ;
+;          |lpm_divide_a5m:auto_generated|                                                                                                ; 303 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod6|lpm_divide_a5m:auto_generated                                                                                                                                                                                                                                                                                 ; lpm_divide_a5m                    ; work         ;
+;             |sign_div_unsign_dnh:divider|                                                                                               ; 303 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod6|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider                                                                                                                                                                                                                                                     ; sign_div_unsign_dnh               ; work         ;
+;                |alt_u_div_03f:divider|                                                                                                  ; 303 (303)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER2:inst6|lpm_divide:Mod6|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider                                                                                                                                                                                                                               ; alt_u_div_03f                     ; work         ;
+;    |clk_div:inst5|                                                                                                                      ; 24 (24)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|clk_div:inst5                                                                                                                                                                                                                                                                                                                              ; clk_div                           ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 92 (1)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 91 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 91 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -459,6 +539,32 @@ Encoding Type:  One-Hot
 +------------------+---------------+--------------+--------------+-------------+----------------+--------------+-------------+--------------+---------------+-----------------+---------------+---------------+----------------+---------------+---------------+--------------+---------------+--------------+----------------+------------------+-----------------+----------------+-----------------+----------------+---------------+--------------+--------------+-------------+------------+
 
 
++----------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                      ;
++-----------------------------------------------------+---------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal       ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------------+------------------------+
+; TIMER2:inst6|IO_COUNT[0]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[1]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[2]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[3]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[4]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[5]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[6]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[7]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[8]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[9]                            ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[10]                           ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[11]                           ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[12]                           ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[13]                           ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[14]                           ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; TIMER2:inst6|IO_COUNT[15]                           ; TIMER2:inst6|IO_COUNT[14] ; yes                    ;
+; Number of user-specified and inferred latches = 16  ;                           ;                        ;
++-----------------------------------------------------+---------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                                                                                                                                ;
 +-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
@@ -471,10 +577,6 @@ Encoding Type:  One-Hot
 ; SCOMP:inst|int_req_sync[1..3]                                                                                                       ; Stuck at GND due to stuck port data_in      ;
 ; SCOMP:inst|IIE[0..3]                                                                                                                ; Lost fanout                                 ;
 ; SCOMP:inst|int_ack[0..3]                                                                                                            ; Lost fanout                                 ;
-; clk_div:inst5|clock_10Hz_int                                                                                                        ; Lost fanout                                 ;
-; clk_div:inst5|count_10Hz[0..19]                                                                                                     ; Lost fanout                                 ;
-; clk_div:inst5|clock_10Hz                                                                                                            ; Lost fanout                                 ;
-; TIMER2:inst6|COUNT[0..15]                                                                                                           ; Lost fanout                                 ;
 ; SCOMP:inst|AC_saved[0..15]                                                                                                          ; Stuck at GND due to stuck port clock_enable ;
 ; SCOMP:inst|PC_saved[0..10]                                                                                                          ; Stuck at GND due to stuck port clock_enable ;
 ; SCOMP:inst|GIE                                                                                                                      ; Lost fanout                                 ;
@@ -489,48 +591,36 @@ Encoding Type:  One-Hot
 ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2 ; Stuck at GND due to stuck port clock        ;
 ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3 ; Stuck at GND due to stuck port clock        ;
 ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4 ; Stuck at GND due to stuck port clock        ;
-; Total Number of Removed Registers = 99                                                                                              ;                                             ;
+; Total Number of Removed Registers = 61                                                                                              ;                                             ;
 +-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                            ;
-+-------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                       ; Reason for Removal        ; Registers Removed due to This Register                                                                                               ;
-+-------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-; SCOMP:inst|int_req[0]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[0], SCOMP:inst|IIE[0], SCOMP:inst|int_ack[0],                                                                ;
-;                                                                                                                                     ; due to stuck port clock   ; SCOMP:inst|AC_saved[15], SCOMP:inst|AC_saved[14], SCOMP:inst|AC_saved[13],                                                           ;
-;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[12], SCOMP:inst|AC_saved[11], SCOMP:inst|AC_saved[10],                                                           ;
-;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[9], SCOMP:inst|AC_saved[8], SCOMP:inst|AC_saved[7],                                                              ;
-;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[6], SCOMP:inst|AC_saved[5], SCOMP:inst|AC_saved[4],                                                              ;
-;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[3], SCOMP:inst|AC_saved[2], SCOMP:inst|AC_saved[1],                                                              ;
-;                                                                                                                                     ;                           ; SCOMP:inst|AC_saved[0], SCOMP:inst|PC_saved[10], SCOMP:inst|PC_saved[9],                                                             ;
-;                                                                                                                                     ;                           ; SCOMP:inst|PC_saved[8], SCOMP:inst|PC_saved[7], SCOMP:inst|PC_saved[6],                                                              ;
-;                                                                                                                                     ;                           ; SCOMP:inst|PC_saved[5], SCOMP:inst|PC_saved[4], SCOMP:inst|PC_saved[3],                                                              ;
-;                                                                                                                                     ;                           ; SCOMP:inst|PC_saved[2], SCOMP:inst|PC_saved[1], SCOMP:inst|PC_saved[0]                                                               ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1 ; Stuck at GND              ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0, ;
-;                                                                                                                                     ; due to stuck port clock   ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2, ;
-;                                                                                                                                     ;                           ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3, ;
-;                                                                                                                                     ;                           ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4  ;
-; SCOMP:inst|int_req[1]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[1], SCOMP:inst|IIE[1], SCOMP:inst|int_ack[1]                                                                 ;
-;                                                                                                                                     ; due to stuck port clock   ;                                                                                                                                      ;
-; SCOMP:inst|int_req[2]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[2], SCOMP:inst|IIE[2], SCOMP:inst|int_ack[2]                                                                 ;
-;                                                                                                                                     ; due to stuck port clock   ;                                                                                                                                      ;
-; SCOMP:inst|int_req[3]                                                                                                               ; Stuck at GND              ; SCOMP:inst|int_req_sync[3], SCOMP:inst|IIE[3], SCOMP:inst|int_ack[3]                                                                 ;
-;                                                                                                                                     ; due to stuck port clock   ;                                                                                                                                      ;
-; DIG_IN:inst7|B_DI[10]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[10]                                                                                                               ;
-;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
-; DIG_IN:inst7|B_DI[11]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[11]                                                                                                               ;
-;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
-; DIG_IN:inst7|B_DI[12]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[12]                                                                                                               ;
-;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
-; DIG_IN:inst7|B_DI[13]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[13]                                                                                                               ;
-;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
-; DIG_IN:inst7|B_DI[14]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[14]                                                                                                               ;
-;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
-; DIG_IN:inst7|B_DI[15]                                                                                                               ; Stuck at GND              ; TIMER2:inst6|COUNT[15]                                                                                                               ;
-;                                                                                                                                     ; due to stuck port data_in ;                                                                                                                                      ;
-+-------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                          ;
++-------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                       ; Reason for Removal      ; Registers Removed due to This Register                                                                                               ;
++-------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; SCOMP:inst|int_req[0]                                                                                                               ; Stuck at GND            ; SCOMP:inst|int_req_sync[0], SCOMP:inst|IIE[0], SCOMP:inst|int_ack[0],                                                                ;
+;                                                                                                                                     ; due to stuck port clock ; SCOMP:inst|AC_saved[15], SCOMP:inst|AC_saved[14], SCOMP:inst|AC_saved[13],                                                           ;
+;                                                                                                                                     ;                         ; SCOMP:inst|AC_saved[12], SCOMP:inst|AC_saved[11], SCOMP:inst|AC_saved[10],                                                           ;
+;                                                                                                                                     ;                         ; SCOMP:inst|AC_saved[9], SCOMP:inst|AC_saved[8], SCOMP:inst|AC_saved[7],                                                              ;
+;                                                                                                                                     ;                         ; SCOMP:inst|AC_saved[6], SCOMP:inst|AC_saved[5], SCOMP:inst|AC_saved[4],                                                              ;
+;                                                                                                                                     ;                         ; SCOMP:inst|AC_saved[3], SCOMP:inst|AC_saved[2], SCOMP:inst|AC_saved[1],                                                              ;
+;                                                                                                                                     ;                         ; SCOMP:inst|AC_saved[0], SCOMP:inst|PC_saved[10], SCOMP:inst|PC_saved[9],                                                             ;
+;                                                                                                                                     ;                         ; SCOMP:inst|PC_saved[8], SCOMP:inst|PC_saved[7], SCOMP:inst|PC_saved[6],                                                              ;
+;                                                                                                                                     ;                         ; SCOMP:inst|PC_saved[5], SCOMP:inst|PC_saved[4], SCOMP:inst|PC_saved[3],                                                              ;
+;                                                                                                                                     ;                         ; SCOMP:inst|PC_saved[2], SCOMP:inst|PC_saved[1], SCOMP:inst|PC_saved[0]                                                               ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1 ; Stuck at GND            ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0, ;
+;                                                                                                                                     ; due to stuck port clock ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2, ;
+;                                                                                                                                     ;                         ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3, ;
+;                                                                                                                                     ;                         ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4  ;
+; SCOMP:inst|int_req[1]                                                                                                               ; Stuck at GND            ; SCOMP:inst|int_req_sync[1], SCOMP:inst|IIE[1], SCOMP:inst|int_ack[1]                                                                 ;
+;                                                                                                                                     ; due to stuck port clock ;                                                                                                                                      ;
+; SCOMP:inst|int_req[2]                                                                                                               ; Stuck at GND            ; SCOMP:inst|int_req_sync[2], SCOMP:inst|IIE[2], SCOMP:inst|int_ack[2]                                                                 ;
+;                                                                                                                                     ; due to stuck port clock ;                                                                                                                                      ;
+; SCOMP:inst|int_req[3]                                                                                                               ; Stuck at GND            ; SCOMP:inst|int_req_sync[3], SCOMP:inst|IIE[3], SCOMP:inst|int_ack[3]                                                                 ;
+;                                                                                                                                     ; due to stuck port clock ;                                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -538,10 +628,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 714   ;
-; Number of registers using Synchronous Clear  ; 132   ;
+; Total registers                              ; 750   ;
+; Number of registers using Synchronous Clear  ; 150   ;
 ; Number of registers using Synchronous Load   ; 236   ;
-; Number of registers using Asynchronous Clear ; 247   ;
+; Number of registers using Asynchronous Clear ; 263   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 501   ;
 ; Number of registers using Preset             ; 0     ;
@@ -577,9 +667,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[1][5] ;
-; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[1]          ;
-; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[12]         ;
+; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[1][7] ;
+; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[7]          ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[2]          ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[4]                ;
 ; 13:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
@@ -1100,6 +1191,259 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod1 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 16             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_a5m ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod3 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 16             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_a5m ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod6 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 16             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_a5m ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod2 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 16             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_a5m ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div3 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 10             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_1dm ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div2 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 13             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_4dm ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod4 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 16             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_a5m ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div5 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_kbm ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div1 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 16             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_7dm ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Mod0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 16             ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_a5m ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: TIMER2:inst6|lpm_divide:Div4 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                             ;
+; LPM_WIDTHD             ; 7              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_nbm ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                       ;
 +-------------------------------------------+--------------------------------------------+
@@ -1134,27 +1478,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------------+-----------------------+
 ; Type                        ; Count                 ;
 +-----------------------------+-----------------------+
-; arriav_ff                   ; 223                   ;
-;     CLR                     ; 52                    ;
+; arriav_ff                   ; 259                   ;
+;     CLR                     ; 68                    ;
 ;     ENA                     ; 41                    ;
 ;     ENA CLR                 ; 10                    ;
 ;     ENA SCLR                ; 11                    ;
 ;     ENA SLD                 ; 99                    ;
-;     plain                   ; 10                    ;
-; arriav_lcell_comb           ; 329                   ;
-;     arith                   ; 28                    ;
-;         1 data inputs       ; 12                    ;
+;     SCLR                    ; 18                    ;
+;     plain                   ; 12                    ;
+; arriav_lcell_comb           ; 2073                  ;
+;     arith                   ; 865                   ;
+;         0 data inputs       ; 136                   ;
+;         1 data inputs       ; 76                    ;
+;         2 data inputs       ; 12                    ;
+;         3 data inputs       ; 273                   ;
+;         4 data inputs       ; 352                   ;
 ;         5 data inputs       ; 16                    ;
-;     extend                  ; 3                     ;
-;         7 data inputs       ; 3                     ;
-;     normal                  ; 298                   ;
+;     extend                  ; 5                     ;
+;         7 data inputs       ; 5                     ;
+;     normal                  ; 1169                  ;
 ;         0 data inputs       ; 1                     ;
-;         1 data inputs       ; 6                     ;
-;         2 data inputs       ; 15                    ;
-;         3 data inputs       ; 30                    ;
-;         4 data inputs       ; 61                    ;
-;         5 data inputs       ; 111                   ;
-;         6 data inputs       ; 74                    ;
+;         1 data inputs       ; 7                     ;
+;         2 data inputs       ; 514                   ;
+;         3 data inputs       ; 226                   ;
+;         4 data inputs       ; 226                   ;
+;         5 data inputs       ; 133                   ;
+;         6 data inputs       ; 62                    ;
+;     shared                  ; 34                    ;
+;         0 data inputs       ; 2                     ;
+;         1 data inputs       ; 32                    ;
 ; boundary_port               ; 69                    ;
 ; cyclonev_fractional_pll     ; 1                     ;
 ; cyclonev_pll_output_counter ; 1                     ;
@@ -1162,8 +1514,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cyclonev_pll_refclk_select  ; 1                     ;
 ; stratixv_ram_block          ; 16                    ;
 ;                             ;                       ;
-; Max LUT depth               ; 5.50                  ;
-; Average LUT depth           ; 2.52                  ;
+; Max LUT depth               ; 62.80                 ;
+; Average LUT depth           ; 35.62                 ;
 +-----------------------------+-----------------------+
 
 
@@ -1172,7 +1524,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1229,7 +1581,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Jul 14 18:33:27 2024
+    Info: Processing started: Tue Jul 16 15:34:40 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file hex_disp.vhd
@@ -1578,26 +1930,28 @@ Info (12128): Elaborating entity "altera_cyclonev_pll_base" for hierarchy "PLL_m
 Info (12131): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0", which is child of megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_cyclonev_pll.v Line: 1153
 Info (12128): Elaborating entity "DIG_IN" for hierarchy "DIG_IN:inst7"
 Warning (12125): Using design file timer2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: TIMER2-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 41
-    Info (12023): Found entity 1: TIMER2 File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 25
+    Info (12022): Found design unit 1: TIMER2-a File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 42
+    Info (12023): Found entity 1: TIMER2 File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 26
 Info (12128): Elaborating entity "TIMER2" for hierarchy "TIMER2:inst6"
-Warning (10631): VHDL Process Statement warning at timer2.vhd(75): inferring latch(es) for signal or variable "IO_COUNT", which holds its previous value in one or more paths through the process File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[0]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[1]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[2]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[3]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[4]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[5]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[6]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[7]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[8]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[9]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[10]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[11]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[12]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[13]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[14]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Info (10041): Inferred latch for "IO_COUNT[15]" at timer2.vhd(75) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at timer2.vhd(68): signal "CS0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at timer2.vhd(86): signal "CS3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 86
+Warning (10631): VHDL Process Statement warning at timer2.vhd(79): inferring latch(es) for signal or variable "IO_COUNT", which holds its previous value in one or more paths through the process File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[0]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[1]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[2]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[3]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[4]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[5]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[6]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[7]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[8]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[9]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[10]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[11]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[12]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[13]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[14]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+Info (10041): Inferred latch for "IO_COUNT[15]" at timer2.vhd(79) File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst5"
 Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst21"
 Warning (12030): Port "extclk" on the entity instantiation of "cyclonev_pll" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be left dangling without any fan-out logic. File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 2224
@@ -1623,7 +1977,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.07.14.18:33:35 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.07.16.15:34:47 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1646,22 +2000,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[1]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[2]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[3]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[4]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[5]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[6]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[7]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[8]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[9]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[10]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[11]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[12]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[13]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[14]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[15]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
-Warning (14026): LATCH primitive "TIMER2:inst6|IO_COUNT[0]" is permanently enabled File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 75
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following LCELL buffer node(s):
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|cntsel_temp[4]" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altera_pll.v Line: 425
@@ -1687,25 +2025,161 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "IO_DATA[2]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
     Warning (13048): Converted tri-state node "IO_DATA[1]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
     Warning (13048): Converted tri-state node "IO_DATA[0]" into a selector File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/HEX_DISP.vhd Line: 25
+Info (278001): Inferred 11 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Mod1" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 106
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Mod3" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 110
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Mod6" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 116
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Mod2" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 109
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Div3" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 109
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Div2" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 108
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Mod4" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 113
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Div5" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 113
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Div1" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 105
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Mod0" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 105
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "TIMER2:inst6|Div4" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 112
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Mod1" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 106
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Mod1" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 106
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_a5m.tdf
+    Info (12023): Found entity 1: lpm_divide_a5m File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_a5m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_dnh File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_dnh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_03f.tdf
+    Info (12023): Found entity 1: alt_u_div_03f File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_03f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Mod3" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 110
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Mod3" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 110
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Mod6" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 116
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Mod6" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 116
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Mod2" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 109
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Mod2" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 109
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Div3" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 109
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Div3" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 109
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1dm.tdf
+    Info (12023): Found entity 1: lpm_divide_1dm File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_1dm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7nh File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_7nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_k2f.tdf
+    Info (12023): Found entity 1: alt_u_div_k2f File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_k2f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Div2" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 108
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Div2" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 108
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "13"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4dm.tdf
+    Info (12023): Found entity 1: lpm_divide_4dm File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_4dm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_anh File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_anh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_q2f.tdf
+    Info (12023): Found entity 1: alt_u_div_q2f File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_q2f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Mod4" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 113
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Mod4" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 113
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Div5" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 113
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Div5" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 113
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_kbm.tdf
+    Info (12023): Found entity 1: lpm_divide_kbm File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_kbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_qlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_qlh File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_qlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_qve.tdf
+    Info (12023): Found entity 1: alt_u_div_qve File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_qve.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Div1" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 105
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Div1" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 105
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7dm.tdf
+    Info (12023): Found entity 1: lpm_divide_7dm File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_7dm.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "TIMER2:inst6|lpm_divide:Div4" File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 112
+Info (12133): Instantiated megafunction "TIMER2:inst6|lpm_divide:Div4" with the following parameter: File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 112
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_nbm.tdf
+    Info (12023): Found entity 1: lpm_divide_nbm File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/lpm_divide_nbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_tlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_tlh File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/sign_div_unsign_tlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_00f.tdf
+    Info (12023): Found entity 1: alt_u_div_00f File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/db/alt_u_div_00f.tdf Line: 23
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[0] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[1] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[2] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[3] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[4] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[5] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[6] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[7] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[8] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[9] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[10] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[11] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[12] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[13] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[14] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
+Warning (13012): Latch TIMER2:inst6|IO_COUNT[15] has unsafe behavior File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/timer2.vhd Line: 79
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: C:/Users/Aditya Singh/Documents/GitHub/ece2031proj/SCOMP_Project_sum24/SCOMP.vhd Line: 22
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "TPs[3]" is stuck at GND
     Warning (13410): Pin "TPs[2]" is stuck at GND
     Warning (13410): Pin "TPs[1]" is stuck at GND
     Warning (13410): Pin "TPs[0]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (17049): 53 registers lost all their fanouts during netlist optimizations.
+Info (17049): 15 registers lost all their fanouts during netlist optimizations.
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 34 of its 39 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 5 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 17 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1230 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2980 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 1134 logic cells
+    Info (21061): Implemented 2884 logic cells
     Info (21064): Implemented 19 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
-    Info: Peak virtual memory: 4952 megabytes
-    Info: Processing ended: Sun Jul 14 18:33:41 2024
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 77 warnings
+    Info: Peak virtual memory: 4985 megabytes
+    Info: Processing ended: Tue Jul 16 15:34:58 2024
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:15
 
 
