@@ -102,6 +102,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 192)(pt 16 192)(line_width 1))
 	)
 	(port
+		(pt 0 208)
+		(input)
+		(text "CS8" (rect 0 0 17 12)(font "Arial" ))
+		(text "CS8" (rect 21 203 38 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
 		(pt 216 32)
 		(bidir)
 		(text "IO_DATA[15..0]" (rect 0 0 68 12)(font "Arial" ))

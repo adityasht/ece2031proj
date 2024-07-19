@@ -1,12 +1,65 @@
-; An empty ASM program ...
+
+
 
 ORG 0
-	JUMP 0
+	LOAD five
+	OUT PAUSE5
+INPUT:
+	IN TIMER6
+    OUT Hex0
+    IN TIMER7
+    OUT Hex1
+	JUMP INPUT
+
+	IN PLAY
+
+SW:
+	IN SWITCH
+	SUB ONE
+	JZERO PAUSEEE
+	IN PLAY
+	IN TIMER2
+    OUT Hex0
+    IN TIMER3
+    OUT Hex1
 	
+	JUMP SW
+	
+	
+	
+PAUSEEE:
+    
+	IN PAUSE
+	
+	IN TIMER2
+    OUT Hex0
+    IN TIMER3
+    OUT Hex1
+	
+	JUMP SW
+
+
+ONE:   DW &H1
+thouu:  DW &HFFFF
+five:   DW &H7530
+   
+   
+   
 ; IO address constants
-Switches:  EQU 000
-LEDs:      EQU 001
-Timer:     EQU 002
-Hex0:      EQU 004
-Hex1:      EQU 005
-Timer2:    EQU &H...
+ZERO: DW 0
+Hex0:   EQU 4
+Hex1:   EQU 5
+TIMER0: EQU &H20
+PAUSE: EQU &H21
+TIMER2: EQU &H22
+TIMER3: EQU &H23
+PLAY: EQU &H24
+PAUSE5: EQU &H25
+TIMER6: EQU &H26
+TIMER7: EQU &H27
+PLAY8: EQU &H28
+SWITCH: EQU 0
+CNT:    DW  0
+
+
+

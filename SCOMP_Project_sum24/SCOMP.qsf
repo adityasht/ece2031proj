@@ -233,5 +233,6 @@ set_global_assignment -name BDF_FILE HEX_DISP_6.bdf
 set_global_assignment -name QIP_FILE PLL_main.qip
 set_global_assignment -name SIP_FILE PLL_main.sip
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name VHDL_FILE output_files/SCOMP.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

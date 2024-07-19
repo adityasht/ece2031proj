@@ -129,6 +129,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "PERF_MODE7_EN" (rect 148 219 235 231)(font "Arial" ))
 		(line (pt 256 224)(pt 240 224)(line_width 1))
 	)
+	(port
+		(pt 256 240)
+		(output)
+		(text "PERF_MODE8_EN" (rect 0 0 87 12)(font "Arial" ))
+		(text "PERF_MODE8_EN" (rect 148 235 235 247)(font "Arial" ))
+		(line (pt 256 240)(pt 240 240)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 240 256)(line_width 1))
 	)
