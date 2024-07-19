@@ -104,130 +104,122 @@ BEGIN
 	  END PROCESS;
     -- IO data should be driven when SCOMP is requesting data
 
-    PROCESS (CLOCK, RESETN)
+    PROCESS (CLOCK, RESETN, IO_WRITE, STstate, CDstate, CS0, CS5)
     BEGIN
-        IF (RESETN = '0' OR CS0 = '1') THEN
+		  IF (RESETN = '0' OR (CS0 = '1' AND IO_WRITE = '0')) THEN
             COUNT <= x"00000000";
-        ELSIF (rising_edge(CLOCK) AND STstate = play) THEN
-            COUNT <= COUNT + 1;
-		  ELSIF (rising_edge(CLOCK) AND STstate = pause) THEN
-            COUNT <= COUNT;
+		  ELSIF rising_edge(CLOCK) THEN
+			  IF (STstate = play) THEN
+					COUNT <= COUNT + 1;
+			  ELSIF (STstate = pause) THEN
+					COUNT <= COUNT;
+			  END IF;
         END IF;
 		  
 		  IF (RESETN = '0' OR (CS0 = '1' AND IO_WRITE = '1')) THEN
             COUNTDOWN <= x"0000EA60";
-		  ELSIF (rising_edge(CLOCK) AND CS5 = '1' AND IO_WRITE = '1') THEN
-            COUNTDOWN(15 downto 0) <= IO_DATA;
-        ELSIF (rising_edge(CLOCK)) THEN -- AND CDstate = play) THEN
-            COUNTDOWN <= COUNTDOWN - 1;
-		  --ELSIF (rising_edge(CLOCK) AND CDstate = pause) THEN
-            --COUNTDOWN <= COUNTDOWN;
+		  ELSIF rising_edge(CLOCK) THEN
+			  IF (CS5 = '1' AND IO_WRITE = '1') THEN
+					COUNTDOWN <= x"0000" & IO_DATA;  -- Read 16-bit input and extend to 32 bits
+			  ELSIF (CDstate = play) THEN
+					COUNTDOWN <= COUNTDOWN - 1;
+			  ELSIF (CDstate = pause) THEN
+					COUNTDOWN <= COUNTDOWN;
+			  END IF;
         END IF;
     END PROCESS;
 
     -- Use a latch to prevent IO_COUNT from changing while an IO operation is occurring.
-    PROCESS (CS2, COUNT, IO_COUNT, TIME_OUT_HEX1, TIME_OUT_HEX0)
-			variable TEMP_IO_COUNT1, TEMP_IO_COUNT2, TEMP_IO_COUNT3, TEMP_IO_COUNT6, TEMP_IO_COUNT7 : std_logic_vector(31 DOWNTO 0);
-    BEGIN
-			
-			TEMP_IO_COUNT1 := COUNT;
-			TEMP_IO_COUnt2 := TIME_OUT_HEX0;
-			TEMP_IO_COUnt3 := TIME_OUT_HEX1;
-			TEMP_IO_COUnt6 := TIME_OUT_HEX2;
-			TEMP_IO_COUnt7 := TIME_OUT_HEX3;
-			
-			IF CS3 = '1' THEN
-				 IO_COUNT <= TEMP_IO_COUnt3;
-				 TEMP_IO_COUNT3 := TEMP_IO_COUNT3;
-			ELSIF CS2 = '1' THEN
-				 IO_COUNT <= TEMP_IO_COUNT2;
-				 TEMP_IO_COUNT2 := TEMP_IO_COUNT2;
-			ELSIF CS6 = '1' THEN
-				 IO_COUNT <= TEMP_IO_COUNT6;
-				 TEMP_IO_COUNT6 := TEMP_IO_COUNT6;
-			ELSIF CS7 = '1' THEN
-				 IO_COUNT <= TEMP_IO_COUNT7;
-				 TEMP_IO_COUNT7 := TEMP_IO_COUNT7;
-			--ELSIF CS1 = '1' THEN
-				 --IO_COUNT <= TEMP_IO_COUNT1;
-				 --TEMP_IO_COUNT1 := TEMP_IO_COUNT1;
-			END IF;
-			
-    END PROCESS;
+	PROCESS (CLOCK, RESETN)
+    VARIABLE latched_data : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	BEGIN
+		 IF RESETN = '0' THEN
+			  IO_COUNT <= (OTHERS => '0');
+			  latched_data := (OTHERS => '0');
+		 ELSIF rising_edge(CLOCK) THEN
+			  -- Latch the data when any CS signal goes high
+			  IF CS1 = '1' THEN
+					latched_data := COUNT;
+			  ELSIF CS2 = '1' THEN
+					latched_data := TIME_OUT_HEX0;
+			  ELSIF CS3 = '1' THEN
+					latched_data := TIME_OUT_HEX1;
+			  ELSIF CS6 = '1' THEN
+					latched_data := TIME_OUT_HEX2;
+			  ELSIF CS7 = '1' THEN
+					latched_data := TIME_OUT_HEX3;
+			  END IF;
 
-    PROCESS (CLOCK, COUNT)
-        variable TEMP: INTEGER;
-        variable H_TENS, H_ONES, M_TENS, M_ONES, S_TENS, S_ONES, Cs_TENS, Cs_ONES: INTEGER;
-    BEGIN
-        TEMP := IEEE.NUMERIC_STD.to_integer(IEEE.NUMERIC_STD.unsigned(COUNT));
-        
-        H_TENS := TEMP / 3600000; 
-        TEMP := TEMP mod 3600000;
-        
-        H_ONES := TEMP / 360000;    
-        TEMP := TEMP mod 360000;
-        
-        M_TENS := TEMP / 60000;          -- Calculate tens of minutes
-        TEMP := TEMP mod 60000;
-        
-        M_ONES := TEMP / 6000;           -- Calculate ones of minutes
-        TEMP := TEMP mod 6000;
-        
-        S_TENS := TEMP / 1000;           -- Calculate tens of seconds
-        TEMP := TEMP mod 1000;
-        
-        S_ONES := TEMP / 100;            -- Calculate ones of seconds
-        TEMP := TEMP mod 100;
-        
-        Cs_TENS := TEMP / 10;            -- Calculate tens of centiseconds
-        Cs_ONES := TEMP mod 10;         -- Calculate ones of centiseconds
-        
-        TIME_OUT_HEX1(15 downto 12)   <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(H_TENS, 4));
-        TIME_OUT_HEX1(11 downto 8)    <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(H_ONES, 4));
-        TIME_OUT_HEX1(7 downto 4)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(M_TENS, 4));
-        TIME_OUT_HEX1(3 downto 0)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(M_ONES, 4));
-        TIME_OUT_HEX0(15 downto 12)   <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(S_TENS, 4));
-        TIME_OUT_HEX0(11 downto 8)    <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(S_ONES, 4));
-        TIME_OUT_HEX0(7 downto 4)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(Cs_TENS, 4));
-        TIME_OUT_HEX0(3 downto 0)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(Cs_ONES, 4));
-    END PROCESS;
-	 
-	 PROCESS (CLOCK, COUNTDOWN)
-        variable TEMP: INTEGER;
-        variable H_TENS, H_ONES, M_TENS, M_ONES, S_TENS, S_ONES, Cs_TENS, Cs_ONES: INTEGER;
-    BEGIN
-        TEMP := IEEE.NUMERIC_STD.to_integer(IEEE.NUMERIC_STD.unsigned(COUNTDOWN));
-        
-        H_TENS := TEMP / 3600000; 
-        TEMP := TEMP mod 3600000;
-        
-        H_ONES := TEMP / 360000;    
-        TEMP := TEMP mod 360000;
-        
-        M_TENS := TEMP / 60000;          -- Calculate tens of minutes
-        TEMP := TEMP mod 60000;
-        
-        M_ONES := TEMP / 6000;           -- Calculate ones of minutes
-        TEMP := TEMP mod 6000;
-        
-        S_TENS := TEMP / 1000;           -- Calculate tens of seconds
-        TEMP := TEMP mod 1000;
-        
-        S_ONES := TEMP / 100;            -- Calculate ones of seconds
-        TEMP := TEMP mod 100;
-        
-        Cs_TENS := TEMP / 10;            -- Calculate tens of centiseconds
-        Cs_ONES := TEMP mod 10;         -- Calculate ones of centiseconds
-        
-        TIME_OUT_HEX3(15 downto 12)   <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(H_TENS, 4));
-        TIME_OUT_HEX3(11 downto 8)    <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(H_ONES, 4));
-        TIME_OUT_HEX3(7 downto 4)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(M_TENS, 4));
-        TIME_OUT_HEX3(3 downto 0)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(M_ONES, 4));
-        TIME_OUT_HEX2(15 downto 12)   <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(S_TENS, 4));
-        TIME_OUT_HEX2(11 downto 8)    <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(S_ONES, 4));
-        TIME_OUT_HEX2(7 downto 4)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(Cs_TENS, 4));
-        TIME_OUT_HEX2(3 downto 0)     <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(Cs_ONES, 4));
-    END PROCESS;
+			  -- Always update IO_COUNT with the latched data
+			  IO_COUNT <= latched_data;
+		 END IF;
+	END PROCESS;
 
+	PROCESS (CLOCK)
+		 VARIABLE TEMP: INTEGER;
+		 VARIABLE H_TENS, H_ONES, M_TENS, M_ONES, S_TENS, S_ONES, Cs_TENS, Cs_ONES: INTEGER;
+	BEGIN
+		 IF rising_edge(CLOCK) THEN
+			  IF CS2 = '1' OR CS3 = '1' THEN
+					TEMP := IEEE.NUMERIC_STD.to_integer(IEEE.NUMERIC_STD.unsigned(COUNT));
+					
+					H_TENS := TEMP / 3600000; 
+					TEMP := TEMP mod 3600000;
+					
+					H_ONES := TEMP / 360000;    
+					TEMP := TEMP mod 360000;
+					
+					M_TENS := TEMP / 60000;
+					TEMP := TEMP mod 60000;
+					
+					M_ONES := TEMP / 6000;
+					TEMP := TEMP mod 6000;
+					
+					S_TENS := TEMP / 1000;
+					TEMP := TEMP mod 1000;
+					
+					S_ONES := TEMP / 100;
+					TEMP := TEMP mod 100;
+					
+					Cs_TENS := TEMP / 10;
+					Cs_ONES := TEMP mod 10;
+					
+					TIME_OUT_HEX1(15 downto 0) <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(H_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(H_ONES, 4) &
+																 IEEE.NUMERIC_STD.to_unsigned(M_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(M_ONES, 4));
+					TIME_OUT_HEX0(15 downto 0) <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(S_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(S_ONES, 4) &
+																 IEEE.NUMERIC_STD.to_unsigned(Cs_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(Cs_ONES, 4));
+			  END IF;
+
+			  IF CS6 = '1' OR CS7 = '1' THEN
+					TEMP := IEEE.NUMERIC_STD.to_integer(IEEE.NUMERIC_STD.unsigned(COUNTDOWN));
+					
+					H_TENS := TEMP / 3600000; 
+					TEMP := TEMP mod 3600000;
+					
+					H_ONES := TEMP / 360000;    
+					TEMP := TEMP mod 360000;
+					
+					M_TENS := TEMP / 60000;
+					TEMP := TEMP mod 60000;
+					
+					M_ONES := TEMP / 6000;
+					TEMP := TEMP mod 6000;
+					
+					S_TENS := TEMP / 1000;
+					TEMP := TEMP mod 1000;
+					
+					S_ONES := TEMP / 100;
+					TEMP := TEMP mod 100;
+					
+					Cs_TENS := TEMP / 10;
+					Cs_ONES := TEMP mod 10;
+					
+					TIME_OUT_HEX3(15 downto 0) <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(H_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(H_ONES, 4) &
+																 IEEE.NUMERIC_STD.to_unsigned(M_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(M_ONES, 4));
+					TIME_OUT_HEX2(15 downto 0) <= std_logic_vector(IEEE.NUMERIC_STD.to_unsigned(S_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(S_ONES, 4) &
+																 IEEE.NUMERIC_STD.to_unsigned(Cs_TENS, 4) & IEEE.NUMERIC_STD.to_unsigned(Cs_ONES, 4));
+			  END IF;
+		 END IF;
+	END PROCESS;
 END a;
 
